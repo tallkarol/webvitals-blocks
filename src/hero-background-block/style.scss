@@ -1,0 +1,75 @@
+/**
+ * Frontend and Editor Styles for Hero Background Block.
+ * These styles are loaded on both frontend and in the editor.
+ */
+
+.hero-background-block {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow: hidden;
+
+	// Background image layer - positioned absolutely to allow srcset optimization
+	.hero-background-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	// Overlay layer
+	.hero-background-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	// Content layer
+	.hero-background-content {
+		position: relative;
+		z-index: 3;
+		width: 100%;
+		max-width: 1200px;
+		padding: 2rem;
+		color: #fff;
+		text-align: center;
+
+		// Responsive padding
+		@media (min-width: 768px) {
+			padding: 4rem 2rem;
+		}
+
+		@media (min-width: 1024px) {
+			padding: 6rem 2rem;
+		}
+
+		// Ensure text is readable
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		}
+	}
+}
+
+// Alignments
+.hero-background-block.alignfull {
+	max-width: 100%;
+}
+
+.hero-background-block.alignwide {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}

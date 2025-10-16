@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build files (commented out - build files should be committed for WordPress VIP)
+# build/
+# dist/
+
+# WordPress
+wp-content/uploads/
+wp-content/cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local

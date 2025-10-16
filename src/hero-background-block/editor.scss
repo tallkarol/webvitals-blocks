@@ -1,0 +1,26 @@
+/**
+ * Editor-only Styles for Hero Background Block.
+ * These styles are only loaded in the block editor.
+ */
+
+.editor-styles-wrapper {
+
+	.hero-background-block {
+		// Editor-specific adjustments
+		border: 1px dashed #ccc;
+
+		&:hover {
+			border-color: #007cba;
+		}
+
+		// Make sure the placeholder is visible
+		.block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+			margin-top: 0;
+			margin-bottom: 1rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
