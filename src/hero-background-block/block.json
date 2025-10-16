@@ -1,0 +1,53 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "webvitals-blocks/hero-background",
+	"version": "1.0.0",
+	"title": "Hero Background Block",
+	"category": "media",
+	"icon": "format-image",
+	"description": "A performant hero block with responsive background images using srcset for optimal Core Web Vitals.",
+	"keywords": [ "hero", "background", "image", "srcset", "performance" ],
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	},
+	"attributes": {
+		"backgroundImageId": {
+			"type": "number",
+			"default": 0
+		},
+		"backgroundImageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundImageAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"minHeight": {
+			"type": "string",
+			"default": "400px"
+		},
+		"contentAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"overlayOpacity": {
+			"type": "number",
+			"default": 0.3
+		},
+		"overlayColor": {
+			"type": "string",
+			"default": "#000000"
+		}
+	},
+	"textdomain": "webvitals-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
